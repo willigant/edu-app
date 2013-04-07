@@ -1,8 +1,15 @@
 Meteor.subscribe("all-students");
 
+Template.quiz.student = function() {
+    var test = Students.findOne().name;
+    console.log(JSON.stringify(test));
+    return test;
+};
+
 Template.hello.greeting = function () {
     return "This is a simple version of an Education App For Travis";
- };
+};
+
 
 Template.hello.events({
     'click input' : function () {
@@ -11,9 +18,5 @@ Template.hello.events({
         console.log("You pressed the button");
     }
 });
-
-Template.quiz.student = function(){
-    return "What!";
-};
 
 
