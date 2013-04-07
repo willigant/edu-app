@@ -1,6 +1,8 @@
 Meteor.subscribe("all-students");
 Meteor.subscribe("all-questions");
 
+Meteor.loginWithPassword(user,password);
+
 Template.quiz.student = function() {
     var student = Students.findOne().name;
     return student;

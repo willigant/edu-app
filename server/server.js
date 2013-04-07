@@ -1,7 +1,7 @@
 
 //publish all students
 Meteor.publish("all-students", function(){
-    return Students.find();
+    return Students.find({});
 })
 
 Meteor.startup(function () {
