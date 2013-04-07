@@ -1,12 +1,19 @@
-  Template.hello.greeting = function () {
-    return "This is a simple version of an Education App For Travis";
-  };
+Meteor.subscribe("all-students");
 
-  Template.hello.events({
+Template.hello.greeting = function () {
+    return "This is a simple version of an Education App For Travis";
+ };
+
+Template.hello.events({
     'click input' : function () {
       // template data, if any, is available in 'this'
       if (typeof console !== 'undefined')
         console.log("You pressed the button");
     }
-  });
+});
+
+Template.quiz.student = function(){
+    return "What!";
+};
+
 
