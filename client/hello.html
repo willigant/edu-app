@@ -1,5 +1,9 @@
 <template name="quiz">
-<h1>Hello {{student}}</h1>
+    <h1>Quiz</h1>
+    <p>Hello {{student}}</p>
+        {{#each question}}
+        <li>{{this}}</li>
+        {{/each}}
 </template>
 
 <template name="hello">
