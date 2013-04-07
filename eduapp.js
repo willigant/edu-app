@@ -1,3 +1,8 @@
+//declare collections
+Students = new Meteor.Collection("students");
+Questions = new Meteor.Collection("questions");
+
+
 if (Meteor.isClient) {
   Template.hello.greeting = function () {
     return "This is a simple version of an Education App For Travis";
