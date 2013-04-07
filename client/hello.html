@@ -1,10 +1,10 @@
 <template name="quiz">
+    {{loginButtons}}
     <h1>Quiz</h1>
     <p>Hello {{student}}</p>
         {{#each question}}
         <li>{{this}}</li>
         {{/each}}
-        {{loginButtons}}
 </template>
 
 <template name="hello">
