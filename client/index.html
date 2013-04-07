@@ -13,12 +13,52 @@
 </head>
 
 <body>
-    {{> hello }}
+
+    <div class="row" id="navigation">
+        <div class="small-6 columns">H</div>
+        <div class="small-6 columns"><img src="//placehold.it/48x48" /></div>
+    </div>
+   
+    <div class="row">
+        <div class="columns small-12">Question 1 of 10</div>
+    </div>
+
+
+    <div class="row" id="question">
+        <div class="columns small-12">Travis went to sleep at 10:00 P.M. He woke
+        up at 7:15 A.M. How long did Chris Sleep?</div>
+    </div>
+
+    <div class="row" id="answers">
+        <div class="columns small-12">
+            <ol>
+                <li>2 hours, 45 minutes</li>
+                <li>9 hours, 15 minutes</li>
+                <li>10 hours, 15 minutes</li>
+                <li>14 hours, 35 mintues</li>
+            </ol>
+        </div>
+    </div>
+
+    <ul class="small-block-grid-4">
+        <li>
+            <a href="#">A</a>
+        </li>
+        <li>
+            <a href="#">B</a>
+        </li>
+        <li>
+            <a href="#">C</a>
+        </li>
+        <li>
+            <a href="#">D</a>
+        </li>
+    </ul>
 
   <script>
-  document.write('<script src=' +
-  ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
-  '.js><\/script>')
+      document.write('<script src=' +
+      ('__proto__' in {} ? 'javascripts/vendor/zepto' : 'javascripts/vendor/jquery') +
+      '.js><\/script>')
   </script>
   
   <script src="javascripts/foundation/foundation.js"></script>
